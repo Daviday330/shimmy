@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Shimmy Shimmy Coco Pop</title>
+        <title>LEBRON JAMES</title>
         <style>
             img{
                 width: 350px;
                 height: auto;
             }
+            h1{
+                color: red;
+            }
         </style>
     </head>
     <body>
-        <h1>Shimmy Shimmy Coco Pop</h1>
-        <p>Shimmy Shimmy Pop!!!</p>
+        <h1>LEBRON RAYMONE</h1>
+        <p>JAMES SR.</p>
         <img src="https://i.ebayimg.com/images/g/hEAAAOSw0fxlOo37/s-l1600.webp"
+        <br>
+        <blockquote>"I'm only one guy. I took Hedo [Türkoğlu] in the first game and Rashard [Lewis] hit the winning shot. I took Rashard in the second game and Hedo hit the shot. If I could clone myself, we'd be all right. But I can't." - Lebron James</blockquote>
+        <button onclick="changeQuote()">Change Quote</button>
+        <script>
+
+            var index=0
+
+            function changeQuote() {
+
+                var quotes=[
+
+                    `"This fall, and this was a very tough decision for me, but this fall I will be taking my talents to South Beach and play with the Miami Heat." - Lebron James`,
+
+                    `"Not two, not three, not four, not five, not six, not seven." - Lebron James`,
+
+                    `"CLEVELAND! This is for you!" - Lebron James`
+
+                ];
+                var blockquote = document.querySelector("blockquote");
+
+                blockquote.innerHTML = quotes[index];
+
+                index++;
+
+                if (index >= 3) {
+                    index = 0;
+                }
+
+
+            }
+        </script>
     </body>
 </html>
